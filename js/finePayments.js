@@ -37,7 +37,7 @@ function payFine() {
         return;
     }
 
-    let passportRegex = /^[А-Я]{2}\d{6}$/i;
+    let passportRegex = /^[А-ЯІЇ]{2}\d{6}$/i;
     if (passportRegex.test(passport.value) === false) {
         alert("Не вірний паспортний номер");
         return;
